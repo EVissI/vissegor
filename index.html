@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
             scroll-behavior: smooth;
             background: #f4f7fc;
         }
+
         .hero-section {
             position: relative;
             background: linear-gradient(135deg, #1e3a8a, #7c3aed);
@@ -25,6 +27,7 @@
             text-align: center;
             overflow: hidden;
         }
+
         #particles-js {
             position: absolute;
             width: 100%;
@@ -33,23 +36,28 @@
             left: 0;
             z-index: 0;
         }
+
         .hero-content {
             position: relative;
             z-index: 1;
         }
+
         .hero-section h1 {
             font-size: 4rem;
             font-weight: 700;
             margin-bottom: 20px;
         }
+
         .hero-section p {
             font-size: 1.8rem;
             max-width: 700px;
             margin: 0 auto;
         }
+
         .section {
             padding: 100px 0;
         }
+
         .portfolio-item {
             transition: transform 0.4s ease, box-shadow 0.4s ease;
             border-radius: 15px;
@@ -59,16 +67,19 @@
             flex-direction: column;
             height: 100%;
         }
+
         .portfolio-item:hover {
             transform: scale(1.05);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
+
         .portfolio-item img {
             width: 100%;
             height: 220px;
             object-fit: cover;
             border-radius: 15px 15px 0 0;
         }
+
         .portfolio-item .card-body {
             padding: 25px;
             flex-grow: 1;
@@ -76,9 +87,11 @@
             flex-direction: column;
             justify-content: space-between;
         }
+
         .portfolio-item .card-text {
             flex-grow: 1;
         }
+
         .portfolio-item .card-title {
             display: flex;
             align-items: center;
@@ -86,11 +99,13 @@
             margin-bottom: 15px;
             font-size: 1.25rem;
         }
+
         .portfolio-item .card-text a {
             color: #7c3aed;
             text-decoration: none;
             position: relative;
         }
+
         .portfolio-item .card-text a::after {
             content: '';
             position: absolute;
@@ -101,26 +116,32 @@
             background: #7c3aed;
             transition: width 0.3s ease;
         }
+
         .portfolio-item .card-text a:hover::after {
             width: 100%;
         }
+
         .portfolio-item .card-text a:hover {
             color: #5b21b6;
         }
+
         .portfolio-icon {
             width: 40px;
             height: 40px;
             fill: #7c3aed;
             transition: fill 0.3s ease;
         }
+
         .portfolio-item:hover .portfolio-icon {
             fill: #5b21b6;
         }
+
         .contact-links {
             max-width: 600px;
             margin: 0 auto;
             text-align: center;
         }
+
         .contact-links a {
             display: inline-block;
             margin: 15px;
@@ -130,6 +151,7 @@
             position: relative;
             transition: color 0.3s ease, transform 0.3s ease;
         }
+
         .contact-links a::after {
             content: '';
             position: absolute;
@@ -140,61 +162,78 @@
             background: #7c3aed;
             transition: width 0.3s ease;
         }
+
         .contact-links a:hover::after {
             width: 100%;
         }
+
         .contact-links a:hover {
             color: #5b21b6;
             transform: translateY(-3px);
         }
+
         footer {
             background: #1e3a8a;
             color: white;
             padding: 30px 0;
             text-align: center;
         }
+
         .navbar {
             transition: background-color 0.3s ease;
             background: transparent;
         }
+
         .navbar.scrolled {
             background: #ffffff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .navbar-brand, .nav-link {
+
+        .navbar-brand,
+        .nav-link {
             color: white !important;
             transition: color 0.3s ease;
         }
-        .navbar.scrolled .navbar-brand, .navbar.scrolled .nav-link {
+
+        .navbar.scrolled .navbar-brand,
+        .navbar.scrolled .nav-link {
             color: #1e3a8a !important;
         }
+
         .btn-primary {
             background: #7c3aed;
             border: none;
             transition: background 0.3s ease, transform 0.3s ease;
         }
+
         .btn-primary:hover {
             background: #5b21b6;
             transform: scale(1.1);
         }
+
         /* Адаптивность */
         @media (max-width: 768px) {
             .hero-section h1 {
                 font-size: 2.5rem;
             }
+
             .hero-section p {
                 font-size: 1.2rem;
             }
+
             .portfolio-item .card-title {
                 font-size: 1rem;
             }
+
             .portfolio-icon {
                 width: 30px;
                 height: 30px;
             }
+
             .portfolio-item img {
                 height: 150px;
             }
+
             .contact-links a {
                 font-size: 1rem;
                 margin: 10px;
@@ -202,12 +241,14 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Егор Виссарионов</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -237,8 +278,11 @@
             <h2 class="text-center mb-5" data-aos="zoom-in">Обо мне</h2>
             <div class="row" data-aos="slide-up" data-aos-delay="100">
                 <div class="col-md-6">
-                    <p>Я Егор Виссарионов, Python разработчик, создающий кастомные боты для автоматизации сложных задач. Мои проекты — это уникальные решения, написанные с нуля на Python, без шаблонов и конструкторов. Я превращаю идеи в эффективные инструменты.</p>
-                    <p>Мой опыт включает веб-скрейпинг, разработку Telegram-ботов, интеграцию API и управление данными. Я фокусируюсь на производительности, масштабируемости и удобстве для пользователей.</p>
+                    <p>Я Егор Виссарионов, Python разработчик, создающий кастомные боты для автоматизации сложных задач.
+                        Мои проекты — это уникальные решения, написанные с нуля на Python, без шаблонов и конструкторов.
+                        Я превращаю идеи в эффективные инструменты.</p>
+                    <p>Мой опыт включает веб-скрейпинг, разработку Telegram-ботов, интеграцию API и управление данными.
+                        Я фокусируюсь на производительности, масштабируемости и удобстве для пользователей.</p>
                 </div>
                 <div class="col-md-6">
                     <h5>Ключевые навыки:</h5>
@@ -261,49 +305,85 @@
             <div class="row">
                 <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="100">
                     <div class="portfolio-item card">
-                        <img src="images/dice.svg" alt="Checkers Analyzer Bot" onerror="this.src='https://via.placeholder.com/400x220?text=Checkers+Analyzer+Bot';">
+                        <img src="images/dice.svg" alt="Checkers Analyzer Bot"
+                            onerror="this.src='https://via.placeholder.com/400x220?text=Checkers+Analyzer+Bot';">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <svg class="portfolio-icon" viewBox="0 0 24 24"><use xlink:href="#dice"></use></svg>
+                                <svg class="portfolio-icon" viewBox="0 0 512 512" width="40" height="40">
+                                    <use xlink:href="#dice"></use>
+                                </svg>
                                 Checkers Analyzer Bot
                             </h5>
-                            <p class="card-text">Telegram-бот для анализа игр в шашки, использующий движок GNUBG. Хранит состояние в Redis, данные в PostgreSQL, построен на aiogram. Поддерживает роли, интеграцию с ЮKassa, промокоды и генерацию Excel-отчетов с расчетом среднего балла по играм. <a href="https://github.com/EVissI/download_files" target="_blank"><svg class="portfolio-icon" viewBox="0 0 24 24"><use xlink:href="#github_proj"></use></svg> GitHub</a></p>
+                            <p class="card-text">Telegram-бот для анализа игр в шашки, использующий движок GNUBG. Хранит
+                                состояние в Redis, данные в PostgreSQL, построен на aiogram. Поддерживает роли,
+                                интеграцию с ЮKassa, промокоды и генерацию Excel-отчетов с расчетом среднего балла по
+                                играм. <a href="https://github.com/EVissI/download_files" target="_blank"><svg
+                                        class="portfolio-icon" viewBox="0 0 24 24">
+                                        <use xlink:href="#github_proj"></use>
+                                    </svg> GitHub</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
                     <div class="portfolio-item card">
-                        <img src="images/car.svg" alt="Car Auction Bot" onerror="this.src='https://via.placeholder.com/400x220?text=Car+Auction+Bot';">
+                        <img src="images/car.svg" alt="Car Auction Bot"
+                            onerror="this.src='https://via.placeholder.com/400x220?text=Car+Auction+Bot';">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <svg class="portfolio-icon" viewBox="0 0 24 24"><use xlink:href="#car"></use></svg>
+                                <svg class="portfolio-icon" viewBox="0 0 24 24">
+                                    <use xlink:href="#car"></use>
+                                </svg>
                                 Car Auction Bot
                             </h5>
-                            <p class="card-text">Бот-посредник для аукционов автомобилей в Telegram. Публикует лоты в группе с деталями и ссылками, предоставленными админами, и позволяет пользователям делать ставки. Построен на Python с использованием aiogram. <a href="https://github.com/EVissI/dubrovka_bot_replika" target="_blank"><svg class="portfolio-icon" viewBox="0 0 24 24"><use xlink:href="#github"></use></svg> GitHub</a></p>
+                            <p class="card-text">Бот-посредник для аукционов автомобилей в Telegram. Публикует лоты в
+                                группе с деталями и ссылками, предоставленными админами, и позволяет пользователям
+                                делать ставки. Построен на Python с использованием aiogram. <a
+                                    href="https://github.com/EVissI/dubrovka_bot_replika" target="_blank"><svg
+                                        class="portfolio-icon" viewBox="0 0 24 24">
+                                        <use xlink:href="#github"></use>
+                                    </svg> GitHub</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="300">
                     <div class="portfolio-item card">
-                        <img src="images/worker.svg" alt="Uchet Bot" onerror="this.src='https://via.placeholder.com/400x220?text=Uchet+Bot';">
+                        <img src="images/worker.svg" alt="Uchet Bot"
+                            onerror="this.src='https://via.placeholder.com/400x220?text=Uchet+Bot';">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <svg class="portfolio-icon" viewBox="0 0 24 24"><use xlink:href="#worker"></use></svg>
+                                <svg class="portfolio-icon" viewBox="0 0 24 24">
+                                    <use xlink:href="#worker"></use>
+                                </svg>
                                 Uchet Bot
                             </h5>
-                            <p class="card-text">Многофункциональный Telegram-бот для учета инструментов, материалов и сотрудников на стройке. Включает FastAPI, aiogram, Flask-Admin и PostgreSQL. Поддерживает роли, многоязычность (RU, UZ, TG), документооборот, отчеты и интеграцию с Telegram-группами. <a href="https://github.com/EVissI/uchet_bot" target="_blank"><svg class="portfolio-icon" viewBox="0 0 24 24"><use xlink:href="#github"></use></svg> GitHub</a></p>
+                            <p class="card-text">Многофункциональный Telegram-бот для учета инструментов, материалов и
+                                сотрудников на стройке. Включает FastAPI, aiogram, Flask-Admin и PostgreSQL.
+                                Поддерживает роли, многоязычность (RU, UZ, TG), документооборот, отчеты и интеграцию с
+                                Telegram-группами. <a href="https://github.com/EVissI/uchet_bot" target="_blank"><svg
+                                        class="portfolio-icon" viewBox="0 0 24 24">
+                                        <use xlink:href="#github"></use>
+                                    </svg> GitHub</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="400">
                     <div class="portfolio-item card">
-                        <img src="images/iphone.svg" alt="iPhone Inventory Bot" onerror="this.src='https://via.placeholder.com/400x220?text=iPhone+Inventory+Bot';">
+                        <img src="images/iphone.svg" alt="iPhone Inventory Bot"
+                            onerror="this.src='https://via.placeholder.com/400x220?text=iPhone+Inventory+Bot';">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <svg class="portfolio-icon" viewBox="0 0 24 24"><use xlink:href="#iphone"></use></svg>
+                                <svg class="portfolio-icon" viewBox="0 0 24 24">
+                                    <use xlink:href="#iphone"></use>
+                                </svg>
                                 iPhone Inventory Bot
                             </h5>
-                            <p class="card-text">Telegram-бот с интегрированным веб-приложением для учета iPhone по штрих-кодам. Работает на вебхуках, включает встроенный сканер штрих-кодов. Построен на Python с aiogram для эффективного управления инвентарем. <a href="https://github.com/EVissI/imea_scanner" target="_blank"><svg class="portfolio-icon" viewBox="0 0 24 24"><use xlink:href="#github"></use></svg> GitHub</a></p>
+                            <p class="card-text">Telegram-бот с интегрированным веб-приложением для учета iPhone по
+                                штрих-кодам. Работает на вебхуках, включает встроенный сканер штрих-кодов. Построен на
+                                Python с aiogram для эффективного управления инвентарем. <a
+                                    href="https://github.com/EVissI/imea_scanner" target="_blank"><svg
+                                        class="portfolio-icon" viewBox="0 0 24 24">
+                                        <use xlink:href="#github"></use>
+                                    </svg> GitHub</a></p>
                         </div>
                     </div>
                 </div>
@@ -316,9 +396,18 @@
         <div class="container">
             <h2 class="text-center mb-5" data-aos="zoom-in">Связаться со мной</h2>
             <div class="contact-links" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://t.me/Ebezin" target="_blank" data-aos="zoom-in" data-aos-delay="200"><svg class="portfolio-icon" viewBox="0 0 24 24"><use xlink:href="#telegram"></use></svg> Telegram: @Ebezin</a>
-                <a href="tel:+79149624234" data-aos="zoom-in" data-aos-delay="300"><svg class="portfolio-icon" viewBox="0 0 24 24"><use xlink:href="#whatsapp"></use></svg> Телефон: +7 (914) 962-42-34</a>
-                <a href="https://github.com/EVissI" target="_blank" data-aos="zoom-in" data-aos-delay="400"><svg class="portfolio-icon" viewBox="0 0 24 24"><use xlink:href="#github"></use></svg> GitHub: EVissI</a>
+                <a href="https://t.me/Ebezin" target="_blank" data-aos="zoom-in" data-aos-delay="200"><svg
+                        class="portfolio-icon" viewBox="0 0 24 24">
+                        <use xlink:href="#telegram"></use>
+                    </svg> Telegram: @Ebezin</a>
+                <a href="tel:+79149624234" data-aos="zoom-in" data-aos-delay="300"><svg class="portfolio-icon"
+                        viewBox="0 0 24 24">
+                        <use xlink:href="#whatsapp"></use>
+                    </svg> Телефон: +7 (914) 962-42-34</a>
+                <a href="https://github.com/EVissI" target="_blank" data-aos="zoom-in" data-aos-delay="400"><svg
+                        class="portfolio-icon" viewBox="0 0 24 24">
+                        <use xlink:href="#github"></use>
+                    </svg> GitHub: EVissI</a>
             </div>
         </div>
     </section>
@@ -333,38 +422,45 @@
     <!-- SVG Sprites -->
     <svg style="display: none;">
         <symbol id="github" viewBox="0 0 24 24">
-            <path fill="currentColor" fill-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974c0 4.406 2.857 8.145 6.821 9.465c.499.09.679-.217.679-.481c0-.237-.008-.865-.011-1.696c-2.775.602-3.361-1.338-3.361-1.338c-.452-1.152-1.107-1.459-1.107-1.459c-.905-.619.069-.605.069-.605c1.002.07 1.527 1.028 1.527 1.028c.89 1.524 2.336 1.084 2.902.829c.091-.645.351-1.085.635-1.334c-2.214-.251-4.542-1.107-4.542-4.93c0-1.087.389-1.979 1.024-2.675c-.101-.253-.446-1.268.099-2.64c0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336a9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021c.545 1.372.203 2.387.099 2.64c.64.696 1.024 1.587 1.024 2.675c0 3.833-2.33 4.675-4.552 4.922c.355.308.675.916.675 1.846c0 1.334-.012 2.41-.012 2.737c0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974C22 6.465 17.535 2 12.026 2" clip-rule="evenodd"/>
+            <path fill="currentColor" fill-rule="evenodd"
+                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974c0 4.406 2.857 8.145 6.821 9.465c.499.09.679-.217.679-.481c0-.237-.008-.865-.011-1.696c-2.775.602-3.361-1.338-3.361-1.338c-.452-1.152-1.107-1.459-1.107-1.459c-.905-.619.069-.605.069-.605c1.002.07 1.527 1.028 1.527 1.028c.89 1.524 2.336 1.084 2.902.829c.091-.645.351-1.085.635-1.334c-2.214-.251-4.542-1.107-4.542-4.93c0-1.087.389-1.979 1.024-2.675c-.101-.253-.446-1.268.099-2.64c0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336a9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021c.545 1.372.203 2.387.099 2.64c.64.696 1.024 1.587 1.024 2.675c0 3.833-2.33 4.675-4.552 4.922c.355.308.675.916.675 1.846c0 1.334-.012 2.41-.012 2.737c0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974C22 6.465 17.535 2 12.026 2"
+                clip-rule="evenodd" />
         </symbol>
         <symbol id="telegram" viewBox="0 0 24 24">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001l-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15l4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="m20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001l-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15l4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434" />
+            </svg>
         </symbol>
         <symbol id="whatsapp" viewBox="0 0 24 24">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M18.403 5.633A8.92 8.92 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977c0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a9 9 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.93 8.93 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.45 7.45 0 0 1-3.798-1.041l-.272-.162l-2.824.741l.753-2.753l-.177-.282a7.45 7.45 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.4 7.4 0 0 1 5.275 2.188a7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73s-.354-.112-.504.112s-.58.729-.711.879s-.262.168-.486.056s-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393s.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666c-.181-.435-.366-.377-.504-.383a10 10 0 0 0-.429-.008a.83.83 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321s1.582 2.415 3.832 3.387c.536.231.954.369 1.279.473c.537.171 1.026.146 1.413.089c.431-.064 1.327-.542 1.514-1.066s.187-.973.131-1.067s-.207-.151-.43-.263" clip-rule="evenodd"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" fill-rule="evenodd"
+                    d="M18.403 5.633A8.92 8.92 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977c0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a9 9 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.93 8.93 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.45 7.45 0 0 1-3.798-1.041l-.272-.162l-2.824.741l.753-2.753l-.177-.282a7.45 7.45 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.4 7.4 0 0 1 5.275 2.188a7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73s-.354-.112-.504.112s-.58.729-.711.879s-.262.168-.486.056s-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393s.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666c-.181-.435-.366-.377-.504-.383a10 10 0 0 0-.429-.008a.83.83 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321s1.582 2.415 3.832 3.387c.536.231.954.369 1.279.473c.537.171 1.026.146 1.413.089c.431-.064 1.327-.542 1.514-1.066s.187-.973.131-1.067s-.207-.151-.43-.263"
+                    clip-rule="evenodd" />
+            </svg>
         </symbol>
         <symbol id="car" viewBox="0 0 24 24">
 
         </symbol>
-        <symbol id="default_bot" viewBox="0 0 24 24"><use xlink:href="image/default_bot.svg#default_bot"/></symbol>
-        <symbol id="dice" viewBox="0 0 24 24">
-            <svg height="800px" width="800px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                viewBox="0 0 512 512"  xml:space="preserve">
-            <style type="text/css">
-                .st0{fill:#000000;}
-            </style>
+        <symbol id="default_bot" viewBox="0 0 24 24">
+            <use xlink:href="image/default_bot.svg#default_bot" />
+        </symbol>
+        <symbol id="dice" viewBox="0 0 512 512">
             <g>
                 <path class="st0" d="M412.578,198.174c-11.158,6.083-20.201,20.053-20.201,31.21c0,11.151,9.043,15.266,20.201,9.191
-                    c11.15-6.082,20.2-20.06,20.2-31.211C432.778,196.207,423.728,192.091,412.578,198.174z"/>
+                    c11.15-6.082,20.2-20.06,20.2-31.211C432.778,196.207,423.728,192.091,412.578,198.174z" />
                 <path class="st0" d="M412.578,263.945c-11.158,6.083-20.201,20.053-20.201,31.21c0,11.158,9.043,15.273,20.201,9.191
-                    c11.15-6.082,20.2-20.059,20.2-31.21C432.778,261.985,423.728,257.863,412.578,263.945z"/>
+                    c11.15-6.082,20.2-20.059,20.2-31.21C432.778,261.985,423.728,257.863,412.578,263.945z" />
                 <path class="st0" d="M314.4,296.257c11.151-6.083,20.201-20.053,20.201-31.211c0-11.158-9.05-15.273-20.201-9.191
-                    c-11.164,6.083-20.201,20.053-20.201,31.211C294.199,298.224,303.236,302.339,314.4,296.257z"/>
+                    c-11.164,6.083-20.201,20.053-20.201,31.211C294.199,298.224,303.236,302.339,314.4,296.257z" />
                 <path class="st0" d="M412.578,329.723c-11.158,6.076-20.201,20.053-20.201,31.204c0,11.158,9.043,15.273,20.201,9.19
-                    c11.15-6.082,20.2-20.053,20.2-31.21C432.778,327.756,423.728,323.641,412.578,329.723z"/>
+                    c11.15-6.082,20.2-20.053,20.2-31.21C432.778,327.756,423.728,323.641,412.578,329.723z" />
                 <path class="st0" d="M314.4,387.399c-11.164,6.089-20.201,20.06-20.201,31.21c0,11.158,9.036,15.273,20.201,9.19
-                    c11.151-6.075,20.201-20.052,20.201-31.21C334.601,385.438,325.551,381.323,314.4,387.399z"/>
+                    c11.151-6.075,20.201-20.052,20.201-31.21C334.601,385.438,325.551,381.323,314.4,387.399z" />
                 <path class="st0" d="M315.602,321.627c-11.157,6.083-20.194,20.053-20.194,31.211c0,11.158,9.036,15.273,20.194,9.191
-                    c11.158-6.083,20.208-20.053,20.208-31.211C335.81,319.66,326.76,315.544,315.602,321.627z"/>
-                <path class="st0" d="M449.528,105.602L288.466,8.989C278.476,2.994,267.232,0,256,0c-11.225,0-22.476,2.994-32.46,8.989
+                    c11.158-6.083,20.208-20.053,20.208-31.211C335.81,319.66,326.76,315.544,315.602,321.627z" />
+                <path class="st0"
+                    d="M449.528,105.602L288.466,8.989C278.476,2.994,267.232,0,256,0c-11.225,0-22.476,2.994-32.46,8.989
                     L62.472,105.602c-19.012,11.406-30.647,31.949-30.647,54.117v192.562c0,22.168,11.634,42.711,30.647,54.117l161.069,96.613
                     C233.524,508.999,244.775,512,256,512c11.232,0,22.476-3.001,32.466-8.989l161.062-96.613
                     c19.006-11.406,30.647-31.95,30.647-54.117V159.719C480.175,137.551,468.534,117.008,449.528,105.602z M250.589,492.733
@@ -372,28 +468,31 @@
                     c0-6.022,1.242-11.862,3.512-17.234l196.328,117.76V492.733z M59.658,133.114c3.371-4.464,7.6-8.318,12.548-11.286l161.069-96.613
                     c6.996-4.196,14.857-6.29,22.725-6.29c7.868,0,15.723,2.095,22.725,6.29l161.068,96.613c4.948,2.968,9.177,6.821,12.547,11.286
                     L256,250.881L59.658,133.114z M461.244,352.281c0,15.521-8.137,29.901-21.45,37.89l-161.068,96.613
-                    c-5.391,3.23-11.292,5.204-17.314,5.949V260.246l196.328-117.76c2.269,5.371,3.505,11.212,3.505,17.234V352.281z"/>
+                    c-5.391,3.23-11.292,5.204-17.314,5.949V260.246l196.328-117.76c2.269,5.371,3.505,11.212,3.505,17.234V352.281z" />
                 <path class="st0" d="M275.522,44.678c-9.828-7.27-26.028-7.459-36.172-0.403c-10.144,7.049-10.399,18.677-0.57,25.948
-                    c9.835,7.277,26.022,7.465,36.166,0.41C285.083,63.576,285.351,51.961,275.522,44.678z"/>
+                    c9.835,7.277,26.022,7.465,36.166,0.41C285.083,63.576,285.351,51.961,275.522,44.678z" />
                 <path class="st0" d="M382.34,115.78c-9.828-7.284-26.021-7.466-36.165-0.417c-10.137,7.049-10.399,18.677-0.57,25.948
-                    c9.835,7.277,26.021,7.459,36.165,0.416C391.914,134.664,392.175,123.057,382.34,115.78z"/>
+                    c9.835,7.277,26.021,7.459,36.165,0.416C391.914,134.664,392.175,123.057,382.34,115.78z" />
                 <path class="st0" d="M165.617,113.564c-9.829-7.278-26.021-7.459-36.165-0.41c-10.151,7.056-10.406,18.67-0.577,25.948
-                    c9.828,7.284,26.022,7.459,36.172,0.41C175.183,132.456,175.445,120.842,165.617,113.564z"/>
+                    c9.828,7.284,26.022,7.459,36.172,0.41C175.183,132.456,175.445,120.842,165.617,113.564z" />
                 <path class="st0" d="M272.441,184.653c-9.836-7.278-26.028-7.459-36.165-0.41c-10.144,7.056-10.406,18.67-0.572,25.947
-                    c9.836,7.284,26.015,7.466,36.166,0.41C282.008,203.551,282.27,191.937,272.441,184.653z"/>
+                    c9.836,7.284,26.015,7.466,36.166,0.41C282.008,203.551,282.27,191.937,272.441,184.653z" />
                 <path class="st0" d="M273.354,115.102c-9.5-7.029-25.135-7.21-34.944-0.396c-9.802,6.814-10.043,18.039-0.551,25.068
-                    c9.5,7.028,25.142,7.21,34.95,0.396C282.605,133.356,282.854,122.131,273.354,115.102z"/>
+                    c9.5,7.028,25.142,7.21,34.95,0.396C282.605,133.356,282.854,122.131,273.354,115.102z" />
                 <path class="st0" d="M89.278,248.303c11.158,6.083,20.208,1.961,20.208-9.19c0-11.158-9.05-25.129-20.208-31.211
-                    c-11.15-6.082-20.194-1.967-20.194,9.191C69.084,228.243,78.128,242.22,89.278,248.303z"/>
+                    c-11.15-6.082-20.194-1.967-20.194,9.191C69.084,228.243,78.128,242.22,89.278,248.303z" />
                 <path class="st0" d="M202.064,422.55c11.157,6.082,20.194,1.967,20.194-9.191c0-11.151-9.037-25.128-20.194-31.211
-                    c-11.158-6.076-20.194-1.96-20.194,9.191C181.87,402.497,190.906,416.468,202.064,422.55z"/>
+                    c-11.158-6.076-20.194-1.96-20.194,9.191C181.87,402.497,190.906,416.468,202.064,422.55z" />
                 <path class="st0" d="M145.672,335.423c11.157,6.083,20.2,1.968,20.2-9.19c0-11.151-9.043-25.128-20.2-31.204
-                    c-11.158-6.082-20.194-1.967-20.194,9.184C125.478,315.37,134.514,329.341,145.672,335.423z"/>
+                    c-11.158-6.082-20.194-1.967-20.194,9.184C125.478,315.37,134.514,329.341,145.672,335.423z" />
             </g>
-            </svg>
         </symbol>
-        <symbol id="iphone" viewBox="0 0 24 24"><use xlink:href="image/iphone.svg#iphone"/></symbol>
-        <symbol id="worker" viewBox="0 0 24 24"><use xlink:href="image/worker.svg#worker"/></symbol>
+        <symbol id="iphone" viewBox="0 0 24 24">
+            <use xlink:href="image/iphone.svg#iphone" />
+        </symbol>
+        <symbol id="worker" viewBox="0 0 24 24">
+            <use xlink:href="image/worker.svg#worker" />
+        </symbol>
     </svg>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -427,7 +526,7 @@
         });
 
         // Navbar scroll effect
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
@@ -437,4 +536,5 @@
         });
     </script>
 </body>
+
 </html>
